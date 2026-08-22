@@ -1,3 +1,53 @@
+<title>Bunko eReader Gizlilik Politikası</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --paper: #f2efe4;
+    --paper-2: #e7e2d0;
+    --paper-3: #ddd7c1;
+    --ink: #2a2822;
+    --ink-soft: #5c574a;
+    --ink-faint: #8b8570;
+    --accent: #2b5876;
+    --accent-strong: #1e3f56;
+    --accent-soft: #dbe4e6;
+    --rule: #cfc9b2;
+    --focus: #b3542a;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1c1b16;
+      --paper-2: #24231c;
+      --paper-3: #2d2b22;
+      --ink: #ede8d9;
+      --ink-soft: #b8b19c;
+      --ink-faint: #83806f;
+      --accent: #86aec4;
+      --accent-strong: #a9c8d9;
+      --accent-soft: #2a3a41;
+      --rule: #3c3a2f;
+      --focus: #d98354;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper: #1c1b16;
+    --paper-2: #24231c;
+    --paper-3: #2d2b22;
+    --ink: #ede8d9;
+    --ink-soft: #b8b19c;
+    --ink-faint: #83806f;
+    --accent: #86aec4;
+    --accent-strong: #a9c8d9;
+    --accent-soft: #2a3a41;
+    --rule: #3c3a2f;
+    --focus: #d98354;
+  }
+
   * { box-sizing: border-box; }
 
   body {
@@ -248,3 +298,99 @@
 
 <div class="page">
   <div class="sheet">
+    <div class="spine" aria-hidden="true"></div>
+
+    <div class="colophon">
+      <span class="mark">Bunko eReader</span>
+      <span>Sürüm 0.1 · Son güncelleme 22 Ağustos 2026</span>
+    </div>
+
+    <h1>Gizlilik Politikası</h1>
+    <p class="subtitle">Kısacası: hiçbir veri toplamıyoruz, çünkü hiçbir yere gönderemeyiz.</p>
+
+    <div class="summary">
+      <p><strong>Bunko eReader</strong>, tamamen cihazınızda çalışan bir EPUB okuyucu uygulamasıdır. İnternet bağlantısı gerektirmez, hesap oluşturmaz, reklam veya analitik hizmeti kullanmaz. Okuduğunuz kitaplar ve okuma ilerlemeniz yalnızca kendi telefonunuzda saklanır; bu bilgiler bizimle veya başka hiçbir tarafla paylaşılmaz.</p>
+    </div>
+
+    <nav class="toc" aria-label="İçindekiler">
+      <span class="label">İçindekiler</span>
+      <ol>
+        <li><span class="num">01</span><a href="#toplama">Topladığımız Veriler</a></li>
+        <li><span class="num">02</span><a href="#yerel">Cihazda Saklanan Veriler</a></li>
+        <li><span class="num">03</span><a href="#izin">Dosya Erişim İzni</a></li>
+        <li><span class="num">04</span><a href="#ucuncu">İnternet ve Üçüncü Taraflar</a></li>
+        <li><span class="num">05</span><a href="#cocuk">Çocukların Gizliliği</a></li>
+        <li><span class="num">06</span><a href="#silme">Verilerin Silinmesi</a></li>
+        <li><span class="num">07</span><a href="#degisiklik">Politikadaki Değişiklikler</a></li>
+        <li><span class="num">08</span><a href="#iletisim">İletişim</a></li>
+      </ol>
+    </nav>
+
+    <section id="toplama">
+      <h2><span class="num">01</span> Topladığımız Veriler</h2>
+      <p>Bunko eReader, sizden veya cihazınızdan hiçbir kişisel veri toplamaz, kaydetmez ya da herhangi bir sunucuya iletmez. Bu uygulamanın bir sunucusu, veritabanı ya da arka ucu (backend) yoktur.</p>
+      <div class="pill-row">
+        <span class="pill no">Ad, e-posta, telefon</span>
+        <span class="pill no">Konum verisi</span>
+        <span class="pill no">Kullanım analitiği</span>
+        <span class="pill no">Reklam kimliği</span>
+        <span class="pill no">Çökme raporlama</span>
+        <span class="pill no">Hesap / oturum açma</span>
+      </div>
+      <p>Bu listedeki hiçbir öğe uygulama tarafından toplanmaz — üçüncü taraf bir SDK (reklam, analitik, çökme izleme vb.) uygulamaya dahil değildir.</p>
+    </section>
+
+    <section id="yerel">
+      <h2><span class="num">02</span> Cihazda Saklanan Veriler</h2>
+      <p>Uygulamanın düzgün çalışabilmesi için aşağıdaki bilgiler <strong>yalnızca kendi cihazınızda</strong>, yerel bir depolama dosyasında tutulur:</p>
+      <ul>
+        <li>Kaldığınız sayfa/bölüm gibi okuma ilerlemesi bilgileri</li>
+        <li>Yazı tipi boyutu, tema gibi okuyucu tercihleriniz</li>
+        <li>Sayfaların daha hızlı açılması için tutulan sayfalama önbelleği</li>
+      </ul>
+      <p>Bu veriler cihazınızdan hiçbir zaman dışarı çıkmaz; internete gönderilmez, yedeklenmez ya da bizimle paylaşılmaz.</p>
+    </section>
+
+    <section id="izin">
+      <h2><span class="num">03</span> Dosya Erişim İzni</h2>
+      <p>Uygulama, seçtiğiniz EPUB dosyalarını açabilmek için cihazınızın dosya sistemine erişim izni ister. Bu izin yalnızca <strong>sizin uygulama içinden seçtiğiniz</strong> dosyaları okumak için kullanılır. Kitap dosyalarınızın içeriği okunur, işlenir ve cihazınızda kalır — hiçbir şekilde uygulama dışına aktarılmaz.</p>
+    </section>
+
+    <section id="ucuncu">
+      <h2><span class="num">04</span> İnternet ve Üçüncü Taraflar</h2>
+      <p>Bunko eReader tamamen çevrimdışı çalışacak şekilde tasarlanmıştır. Uygulama içinde reklam ağı, analitik kütüphanesi, çökme raporlama servisi ya da veri toplayan başka bir üçüncü taraf hizmeti bulunmaz. Dolayısıyla verileriniz hiçbir üçüncü tarafla paylaşılmaz veya satılmaz.</p>
+    </section>
+
+    <section id="cocuk">
+      <h2><span class="num">05</span> Çocukların Gizliliği</h2>
+      <p>Uygulama hiç kimseden — çocuklar dahil — kişisel veri toplamadığı için tüm yaş gruplarındaki kullanıcılar için güvenlidir. 13 yaşından küçük kullanıcılara yönelik özel bir veri işleme süreci yoktur, çünkü zaten hiçbir veri işlenmemektedir.</p>
+    </section>
+
+    <section id="silme">
+      <h2><span class="num">06</span> Verilerin Silinmesi</h2>
+      <p>Tüm okuma verileri yalnızca cihazınızda tutulduğundan, bu verileri tamamen sizin kontrolünüzdedir. Uygulamanın depolama alanını temizleyerek ya da uygulamayı kaldırarak (sil/uninstall) tüm yerel verileri kalıcı olarak silebilirsiniz.</p>
+    </section>
+
+    <section id="degisiklik">
+      <h2><span class="num">07</span> Bu Politikadaki Değişiklikler</h2>
+      <p>Bu gizlilik politikası zaman zaman güncellenebilir. Herhangi bir değişiklik bu sayfada yayımlanacak ve sayfanın üst kısmındaki "son güncelleme" tarihi buna göre değiştirilecektir.</p>
+    </section>
+
+    <section id="iletisim">
+      <h2><span class="num">08</span> İletişim</h2>
+      <p>Bu gizlilik politikası hakkında sorularınız için bizimle iletişime geçebilirsiniz:</p>
+      <div class="contact-card">
+        <div>
+          <span class="to">E-posta</span>
+          <span class="addr">bunkoereader@gmail.com</span>
+        </div>
+        <a class="btn" href="mailto:bunkoereader@gmail.com">E-posta gönder</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>Bunko eReader</span>
+      <span>Son güncelleme: 22 Ağustos 2026</span>
+    </footer>
+  </div>
+</div>
