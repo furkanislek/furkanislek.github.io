@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bunko — Support</title>
+<meta name="description" content="Support, FAQ and privacy policy for Bunko, an offline EPUB and document reader for iOS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4EFE6; --surface:#FDFBF7; --sunken:#EDE7DB;
+    --ink:#1F2D48; --ink-soft:#4B5568; --ink-muted:#737B8C;
+    --line:rgba(31,45,72,.12); --line-strong:rgba(31,45,72,.20);
+    --accent:#D4502E; --accent-soft:#FBE7E0;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#141821; --surface:#1B202C; --sunken:#232936;
+      --ink:#ECE7DC; --ink-soft:#B9BFCC; --ink-muted:#8B93A3;
+      --line:rgba(236,231,220,.14); --line-strong:rgba(236,231,220,.22);
+      --accent:#E8734F; --accent-soft:rgba(232,115,79,.14);
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:'Figtree',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:56px 24px 96px}
+  header{display:flex; align-items:center; gap:14px; margin-bottom:8px}
+  .mark{
+    width:44px; height:44px; border-radius:12px; flex:0 0 auto;
+    background:var(--accent-soft); border:1px solid var(--line-strong);
+    display:grid; place-items:center; color:var(--accent); font-weight:600; font-size:20px;
+  }
+  h1{font-size:28px; font-weight:600; letter-spacing:-.02em; margin:0}
+  .sub{color:var(--ink-muted); margin:2px 0 0; font-size:15px}
+  .lede{color:var(--ink-soft); margin:28px 0 0}
+  h2{
+    font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--ink-muted); margin:48px 0 16px; padding-bottom:10px;
+    border-bottom:1px solid var(--line);
+  }
+  h3{font-size:17px; font-weight:600; margin:26px 0 6px}
+  p{margin:0 0 12px; color:var(--ink-soft)}
+  p strong, li strong{color:var(--ink); font-weight:500}
+  ul{margin:0 0 12px; padding-left:20px; color:var(--ink-soft)}
+  li{margin:0 0 6px}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:currentColor}
+  .card{
+    background:var(--surface); border:1px solid var(--line); border-radius:16px;
+    padding:22px 24px; margin:0 0 16px;
+  }
+  .card h3{margin-top:0}
+  .card p:last-child{margin-bottom:0}
+  .contact{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px}
+  .btn{
+    display:inline-block; padding:11px 18px; border-radius:999px; font-weight:500; font-size:15px;
+    background:var(--accent); color:#FFF; border:1px solid var(--accent);
+  }
+  .btn:hover{border-bottom-color:var(--accent); opacity:.92}
+  .btn.ghost{background:transparent; color:var(--ink); border-color:var(--line-strong)}
+  .meta{color:var(--ink-muted); font-size:14px}
+  footer{
+    margin-top:64px; padding-top:20px; border-top:1px solid var(--line);
+    color:var(--ink-muted); font-size:14px; display:flex; flex-wrap:wrap; gap:8px 18px;
+    justify-content:space-between;
+  }
+  @media (max-width:520px){ .wrap{padding:36px 20px 72px} h1{font-size:24px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark">B</div>
+    <div>
+      <h1>Bunko</h1>
+      <p class="sub">Support &amp; Privacy</p>
+    </div>
+  </header>
+
+  <p class="lede">Bunko is an offline reader for EPUB, PDF, DOCX, TXT and comic archives. Everything stays on your device. If something is not working, or you have an idea for the app, write to me — I read every message.</p>
+
+  <div class="contact">
+    <a class="btn" href="mailto:furkanakif2702@gmail.com?subject=Bunko%20Support">Email support</a>
+    <a class="btn ghost" href="#faq">Read the FAQ</a>
+  </div>
+  <p class="meta" style="margin-top:12px">Typical reply time: within 2 business days. Please include your iOS version, the app version (Settings → About) and, if it is about a specific file, the file format.</p>
+
+  <h2 id="faq">Frequently asked questions</h2>
+
+  <div class="card">
+    <h3>Which file formats can I open?</h3>
+    <p>EPUB, PDF, DOCX, TXT, XLSX, and ZIP / RAR archives — including comics saved as CBZ or CBR. Bunko does not include a bookstore; it opens files you already have.</p>
+  </div>
+
+  <div class="card">
+    <h3>How do I add a book?</h3>
+    <p>Open the Library tab and tap <strong>Import</strong>, then pick a file from Files or iCloud Drive. You can also share a file to Bunko from another app using the iOS share sheet.</p>
+  </div>
+
+  <div class="card">
+    <h3>A file will not open or looks wrong</h3>
+    <p>Some EPUB and DOCX files use unusual internal structures, and DRM-protected files (for example books bought from another store) cannot be opened by any third-party reader. Email me the file if you can share it — that is the fastest way to get it supported.</p>
+  </div>
+
+  <div class="card">
+    <h3>How do highlights and notes work?</h3>
+    <p>Long-press a passage, drag the handles to adjust the selection, then choose a highlight color or add a note. All of your marks for a book are listed in the reader menu, and tapping one jumps back to that spot in the text.</p>
+  </div>
+
+  <div class="card">
+    <h3>What does Bunko Pro unlock?</h3>
+    <p>The free version lets you import <strong>3 books</strong>. Bunko Pro removes that limit so you can import as many books as you like. There are no ads in either version.</p>
+  </div>
+
+  <div class="card">
+    <h3>I paid but Pro is not active / I got a new phone</h3>
+    <p>Open <strong>Settings → Restore Purchases</strong> while signed in with the same Apple ID you used for the purchase. If it still does not unlock, email me and I will sort it out.</p>
+  </div>
+
+  <div class="card">
+    <h3>Can I get a refund?</h3>
+    <p>Purchases are handled by Apple, so refunds go through them: visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> and sign in with your Apple ID.</p>
+  </div>
+
+  <div class="card">
+    <h3>Are my books backed up or synced?</h3>
+    <p>No. Books, reading positions, highlights and notes are stored only on your device. Deleting the app deletes them, so keep your original files somewhere safe. Cross-device sync is on the roadmap.</p>
+  </div>
+
+  <div class="card">
+    <h3>Which languages does Bunko support?</h3>
+    <p>English, Turkish, German, French, Spanish, Italian, Portuguese, Russian, Arabic, Hindi, Indonesian, Japanese, Korean, Thai and Chinese. Bunko follows your iOS language setting.</p>
+  </div>
+
+  <h2 id="privacy">Privacy policy</h2>
+
+  <p><strong>Bunko does not collect, store or transmit any personal data.</strong> There is no account, no sign-up, and no analytics or advertising SDK in the app.</p>
+
+  <h3>Your files</h3>
+  <p>Books and documents you import, along with your reading position, highlights, notes and app settings, are stored locally on your device. They are never uploaded to me or to anyone else, and I have no way to see them.</p>
+
+  <h3>Purchases</h3>
+  <p>If you buy Bunko Pro, the purchase is processed by Apple and validated through RevenueCat, which stores an anonymous purchase identifier so your subscription status can be restored on your devices. This identifier is not linked to your name, email or reading activity. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
+  <h3>Network access</h3>
+  <p>Apart from the purchase and restore flow described above, Bunko makes no network requests. The reader works entirely offline.</p>
+
+  <h3>Children</h3>
+  <p>Bunko does not knowingly collect information from anyone, including children under 13.</p>
+
+  <h3>Changes</h3>
+  <p>If this policy ever changes, the updated version will be published on this page with a new date below.</p>
+
+  <h3>Contact</h3>
+  <p>Questions about privacy or anything else: <a href="mailto:furkanakif2702@gmail.com">furkanakif2702@gmail.com</a></p>
+
+  <footer>
+    <span>© 2026 Furkan Akif İŞLEK</span>
+    <span>Last updated: 24 August 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>
