@@ -1,4 +1,4 @@
-<title>Bunko eReader Terms of Use</title>
+<title>Bunko eReader Privacy Policy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -208,6 +208,14 @@
     color: var(--accent);
   }
 
+  h3 {
+    font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 22px 0 8px;
+    color: var(--ink);
+  }
+
   p { margin: 0 0 14px; color: var(--ink); }
   p:last-child { margin-bottom: 0; }
 
@@ -233,6 +241,8 @@
     color: var(--accent-strong);
     border: 1px solid var(--rule);
   }
+
+  .pill.no { background: transparent; color: var(--ink-faint); text-decoration: line-through; }
 
   .note {
     border-left: 3px solid var(--accent);
@@ -310,129 +320,136 @@
 
     <div class="colophon">
       <span class="mark">Bunko eReader</span>
-      <span>Version 1.0 · Last updated September 2, 2026</span>
+      <span>Version 1.1 · Last updated September 2, 2026</span>
     </div>
 
-    <h1>Terms of Use</h1>
-    <p class="subtitle">The rules for using Bunko eReader, in plain language.</p>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Short version: your books and reading data stay on your device. Only two optional features ever touch the internet.</p>
 
     <div class="summary">
-      <p><strong>Bunko eReader</strong> is a reading app you install on your own device. You bring your own files; we provide the reader. Basic reading is free, and <strong>Bunko Pro</strong> is an optional paid upgrade billed by Google Play or the Apple App Store.</p>
-      <p>By installing or using the app you agree to these terms. If you do not agree, please do not use the app. How your data is handled is described separately in our <a href="./bunko-privacy-policy.html">Privacy Policy</a>.</p>
+      <p><strong>Bunko eReader</strong> is a reading app for EPUB, PDF, Word, Excel and text files that runs on your device. It requires no account and includes no advertising, analytics or crash-reporting service. Your books, reading progress, notes and statistics are stored only on your own phone and are never sent to us.</p>
+      <p>Two features use the internet, and only when you choose to use them: <strong>Bunko Pro purchases</strong> (handled by the app store and RevenueCat) and <strong>tap-to-translate</strong> (which sends the text you select to Google Translate). Everything else works fully offline.</p>
     </div>
 
     <nav class="toc" aria-label="Table of contents">
       <span class="label">Table of Contents</span>
       <ol>
-        <li><span class="num">01</span><a href="#agreement">Agreement</a></li>
-        <li><span class="num">02</span><a href="#license">Licence to Use the App</a></li>
-        <li><span class="num">03</span><a href="#content">Your Files and Content</a></li>
-        <li><span class="num">04</span><a href="#free">Free Use and Bunko Pro</a></li>
-        <li><span class="num">05</span><a href="#billing">Billing, Renewal and Cancellation</a></li>
-        <li><span class="num">06</span><a href="#refunds">Refunds</a></li>
-        <li><span class="num">07</span><a href="#thirdparty">Third-Party Services</a></li>
-        <li><span class="num">08</span><a href="#acceptable">Acceptable Use</a></li>
-        <li><span class="num">09</span><a href="#availability">Availability and Changes</a></li>
-        <li><span class="num">10</span><a href="#liability">Disclaimer and Liability</a></li>
-        <li><span class="num">11</span><a href="#law">Governing Law</a></li>
-        <li><span class="num">12</span><a href="#contact">Contact</a></li>
+        <li><span class="num">01</span><a href="#collection">Data We Collect</a></li>
+        <li><span class="num">02</span><a href="#local">Data Stored on Your Device</a></li>
+        <li><span class="num">03</span><a href="#permission">File Access</a></li>
+        <li><span class="num">04</span><a href="#pro">Bunko Pro and Purchases</a></li>
+        <li><span class="num">05</span><a href="#translate">Tap-to-Translate</a></li>
+        <li><span class="num">06</span><a href="#sharing">Backup, Export and Sharing</a></li>
+        <li><span class="num">07</span><a href="#thirdparty">Internet and Third Parties</a></li>
+        <li><span class="num">08</span><a href="#children">Children's Privacy</a></li>
+        <li><span class="num">09</span><a href="#deletion">Deleting Your Data</a></li>
+        <li><span class="num">10</span><a href="#changes">Changes to This Policy</a></li>
+        <li><span class="num">11</span><a href="#contact">Contact</a></li>
       </ol>
     </nav>
 
-    <section id="agreement">
-      <h2><span class="num">01</span> Agreement</h2>
-      <p>These terms form an agreement between you and the independent developer of Bunko eReader, based in Türkiye ("we", "us"). They apply to the Bunko eReader mobile application and to any update of it.</p>
-      <p>If you use the app through Google Play or the Apple App Store, that store's own terms also apply to your download and to any purchase you make. Where a store rule conflicts with these terms for a purchase made in that store, the store's rule governs the purchase.</p>
+    <section id="collection">
+      <h2><span class="num">01</span> Data We Collect</h2>
+      <p>Bunko eReader has no user accounts and no server of its own. We do not collect, store or transmit any of the following:</p>
+      <div class="pill-row">
+        <span class="pill no">Name, email, phone</span>
+        <span class="pill no">Location data</span>
+        <span class="pill no">Usage analytics</span>
+        <span class="pill no">Advertising ID</span>
+        <span class="pill no">Crash reporting</span>
+        <span class="pill no">Account / sign-in</span>
+        <span class="pill no">Your library or reading history</span>
+      </div>
+      <p>The app contains no advertising, analytics or crash-tracking SDK. The only third-party components that communicate over the internet are the purchase SDK described in section 04 and the translation service described in section 05, and both are limited to the single task they perform.</p>
     </section>
 
-    <section id="license">
-      <h2><span class="num">02</span> Licence to Use the App</h2>
-      <p>We grant you a personal, non-exclusive, non-transferable and revocable licence to install and use Bunko eReader on devices you own or control, for your own non-commercial reading.</p>
-      <p>You may not sell, rent, sublicense or redistribute the app, and you may not decompile or reverse-engineer it except where that right cannot be excluded by law. The app itself, its name, its design and its code remain ours.</p>
-    </section>
-
-    <section id="content">
-      <h2><span class="num">03</span> Your Files and Content</h2>
-      <p>Bunko does not sell, host or supply books. You add your own EPUB, PDF, Word, Excel, text and ZIP files, and they stay on your device.</p>
+    <section id="local">
+      <h2><span class="num">02</span> Data Stored on Your Device</h2>
+      <p>For the app to work, the following information is kept <strong>only on your own device</strong>, in the app's private storage:</p>
       <ul>
-        <li>You keep all rights to your own files. We claim no ownership of them.</li>
-        <li>You are responsible for having the right to hold and read every file you open, and for complying with copyright law where you live.</li>
-        <li>Notes, highlights, collections and statistics you create belong to you and are stored on your device.</li>
+        <li>Your library: the books you have added and their metadata (title, author, cover)</li>
+        <li>Reading progress, such as the page or chapter you left off on</li>
+        <li>Highlights, notes, bookmarks and collections you create</li>
+        <li>Reading statistics, streaks and the yearly summary, computed from your own reading sessions</li>
+        <li>Reader preferences such as font size, theme, line spacing and page-turn style</li>
+        <li>A pagination cache so pages open faster</li>
+        <li>Whether Bunko Pro is active on this device (a cached status, see section 04)</li>
       </ul>
-      <p>Because your library never reaches us, we cannot recover it for you. Keeping your own backup is your responsibility; the app's backup feature exists to help you do that.</p>
+      <p>None of this data is sent to us. It leaves your device only if you export or share it yourself (see section 06), or if your operating system's own backup feature (such as Google Drive or iCloud device backup) includes app data. Those system backups are governed by Google's or Apple's privacy policy, not by ours.</p>
     </section>
 
-    <section id="free">
-      <h2><span class="num">04</span> Free Use and Bunko Pro</h2>
-      <p>The app is free to use with some limits. At the time of writing, the free tier allows up to <strong>10 imported documents</strong> and <strong>3 collections</strong>.</p>
-      <p>Bunko Pro removes those limits and unlocks additional features such as tap-to-translate. Pro may be offered as a subscription or as a one-time lifetime purchase, depending on what is available in your store.</p>
-      <div class="note">Pro access may also be granted temporarily as a reading-streak reward. Such access is a courtesy, is limited in time, and can be changed or withdrawn without notice. It is not a purchase and carries no refund right.</div>
-      <p>We may adjust the free limits or the contents of the Pro tier in future versions. If a change would remove a feature you have already paid for during a paid period, we will not apply it to that period.</p>
+    <section id="permission">
+      <h2><span class="num">03</span> File Access</h2>
+      <p>The app asks for access to your files so it can open the EPUB, PDF, Word, Excel, text and ZIP files <strong>you select from within the app</strong>. It uses the system file picker and only reads the files you choose; it does not scan your storage. Your book files are read, processed and stay on your device. They are never transmitted outside the app.</p>
+      <p>Read-aloud uses your device's built-in text-to-speech engine. The text is spoken by the operating system on the device. If the system engine you have chosen downloads voice data, that is handled by the engine's provider (for example Google or Apple), not by Bunko.</p>
     </section>
 
-    <section id="billing">
-      <h2><span class="num">05</span> Billing, Renewal and Cancellation</h2>
-      <p>All payments are processed by <strong>Google Play</strong> or the <strong>Apple App Store</strong>. We never receive or store your payment details.</p>
+    <section id="pro">
+      <h2><span class="num">04</span> Bunko Pro and Purchases</h2>
+      <p>Bunko Pro is an optional in-app purchase. Payment is processed entirely by <strong>Google Play</strong> or the <strong>Apple App Store</strong>. Bunko never sees your name, payment method or card details.</p>
+      <p>To check whether a purchase is valid and to restore it on a new device, the app uses <a href="https://www.revenuecat.com/" rel="noopener">RevenueCat</a>, a subscription management service. When you open the paywall, purchase or restore, the following is sent to RevenueCat:</p>
       <ul>
-        <li>Prices are shown in the app in your local currency before you confirm, and include any taxes the store applies.</li>
-        <li>Subscriptions renew automatically at the end of each period unless you cancel at least 24 hours before the period ends.</li>
-        <li>You cancel through your store account, not inside Bunko: <em>Google Play → Payments &amp; subscriptions</em>, or <em>Settings → your name → Subscriptions</em> on iOS.</li>
-        <li>Cancelling stops future renewals. Pro stays active until the end of the period you already paid for.</li>
-        <li>A lifetime purchase is a one-time payment with no renewal.</li>
+        <li>A randomly generated, anonymous app user ID that is not linked to your name or email</li>
+        <li>The purchase receipt issued by Google Play or the App Store</li>
+        <li>Basic device information such as platform, operating system version and app version</li>
       </ul>
-      <p>Purchases are tied to the store account that made them. You can restore them on another device with the same account using "Restore purchases" on the Pro screen.</p>
+      <p>RevenueCat uses this only to validate and manage your purchase. It is not used for advertising, and we do not combine it with any other data. RevenueCat's handling of this data is described in the <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat Privacy Policy</a>.</p>
+      <div class="note">If you never open the paywall or purchase Pro, no purchase data is created and nothing is sent to RevenueCat.</div>
     </section>
 
-    <section id="refunds">
-      <h2><span class="num">06</span> Refunds</h2>
-      <p>Refunds are handled by the store that took the payment, under that store's refund policy. We cannot issue refunds directly, because we never receive the payment ourselves.</p>
-      <p>If you believe something went wrong with a purchase, contact us at the address below and we will help you sort it out with the store. Your statutory consumer rights are not affected by this section.</p>
+    <section id="translate">
+      <h2><span class="num">05</span> Tap-to-Translate</h2>
+      <p>Bunko Pro includes a tap-to-translate feature. When you tap a word or select a passage and open the lookup panel, <strong>only that selected text</strong> is sent to Google Translate so it can be translated and, for single words, given dictionary meanings.</p>
+      <ul>
+        <li>The request contains the selected text and your target language. It does not include your name, an account, the book title or any identifier from the app.</li>
+        <li>Google may process the text under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+        <li>Nothing is sent unless you explicitly use the lookup. Reading, highlighting and note-taking never trigger a request.</li>
+        <li>If the translation service cannot be reached, the app may offer to open Google Translate in your browser. That page is then subject to Google's policy.</li>
+      </ul>
+      <p>Bunko does not store the translated text on any server. Results are shown on screen and kept only on your device.</p>
+    </section>
+
+    <section id="sharing">
+      <h2><span class="num">06</span> Backup, Export and Sharing</h2>
+      <p>You can export your reading data and share content from the app. All of these are started by you and use your device's standard share sheet:</p>
+      <ul>
+        <li><strong>Backup and restore</strong> creates a file containing your reading progress, notes, highlights, collections and statistics. You choose where to save or send it. Anyone with that file can read its contents, so store it somewhere you trust.</li>
+        <li><strong>Notes export, quote cards and the yearly summary</strong> produce a file or image that you can send to any app you pick.</li>
+      </ul>
+      <p>Bunko does not upload these files anywhere. Once you hand a file to another app or service, its privacy policy applies.</p>
     </section>
 
     <section id="thirdparty">
-      <h2><span class="num">07</span> Third-Party Services</h2>
-      <p>Some optional features rely on services we do not control:</p>
+      <h2><span class="num">07</span> Internet and Third Parties</h2>
+      <p>Apart from the two cases above, Bunko eReader works entirely offline. It contains no advertising network, no analytics library and no crash-reporting service. We do not sell your data, and we do not share it with any third party for their own purposes.</p>
+      <p>The third parties that may process data when you use the corresponding feature are:</p>
       <ul>
-        <li><strong>RevenueCat</strong> validates and restores purchases.</li>
-        <li><strong>Google Translate</strong> powers tap-to-translate for the text you select.</li>
-        <li>Your device's <strong>text-to-speech engine</strong> performs read-aloud.</li>
+        <li><strong>Google Play / Apple App Store</strong>: payment and receipts for Bunko Pro</li>
+        <li><strong>RevenueCat</strong>: purchase validation and restore (section 04)</li>
+        <li><strong>Google Translate</strong>: translation of text you select (section 05)</li>
       </ul>
-      <p>These services have their own terms and privacy policies. We are not responsible for their availability, accuracy or content. Translations in particular are machine-generated and may be wrong; do not rely on them where accuracy matters. What each service receives is set out in the <a href="./bunko-privacy-policy.html">Privacy Policy</a>.</p>
+      <p>This policy and our <a href="./bunko-terms.html">Terms of Use</a> are linked inside the app under <strong>Settings → About</strong>, and on the Bunko Pro screen.</p>
     </section>
 
-    <section id="acceptable">
-      <h2><span class="num">08</span> Acceptable Use</h2>
-      <p>When using Bunko you agree not to:</p>
-      <ul>
-        <li>Use the app for anything unlawful, or to open material you have no right to possess</li>
-        <li>Attempt to bypass the free-tier limits, the purchase checks or any other restriction in the app</li>
-        <li>Interfere with, overload or abuse the third-party services the app connects to</li>
-        <li>Distribute a modified version of the app or present it as your own</li>
-      </ul>
+    <section id="children">
+      <h2><span class="num">08</span> Children's Privacy</h2>
+      <p>Bunko eReader is not directed at children under 13 and does not knowingly collect personal data from anyone, including children. The app contains an optional in-app purchase; purchases are controlled by the parental controls and payment settings of Google Play or the App Store on the device.</p>
     </section>
 
-    <section id="availability">
-      <h2><span class="num">09</span> Availability and Changes</h2>
-      <p>We aim to keep Bunko working well, but we do not guarantee that it will be available without interruption or free of errors. Features may be added, changed or removed as the app develops, and support for older operating system versions may end.</p>
-      <p>We may update these terms from time to time, for example when a feature changes. The updated version is posted on this page with a new "last updated" date. Continuing to use the app after a change means you accept the updated terms. If a change materially reduces your rights, we will make it visible in the app.</p>
+    <section id="deletion">
+      <h2><span class="num">09</span> Deleting Your Data</h2>
+      <p>All reading data is kept only on your device, so it remains under your control. You can permanently delete it by clearing the app's storage or by uninstalling the app.</p>
+      <p>The anonymous purchase record held by RevenueCat contains no personal information. If you would still like it deleted, email us with the request from the device in question and we will ask RevenueCat to remove it.</p>
     </section>
 
-    <section id="liability">
-      <h2><span class="num">10</span> Disclaimer and Liability</h2>
-      <p>The app is provided "as is" and "as available", without warranties of any kind to the extent permitted by law. We do not warrant that every file will render perfectly, that translations will be accurate, or that no data will ever be lost.</p>
-      <p>To the extent permitted by law, we are not liable for indirect or consequential loss, for lost data or lost reading progress, or for loss arising from your failure to keep a backup. Nothing in these terms excludes liability that cannot lawfully be excluded, including liability for death or personal injury caused by negligence, for fraud, or under mandatory consumer protection law.</p>
-      <p>Where liability cannot be excluded, it is limited to the amount you paid for the app in the twelve months before the event giving rise to the claim.</p>
-    </section>
-
-    <section id="law">
-      <h2><span class="num">11</span> Governing Law</h2>
-      <p>These terms are governed by the laws of the Republic of Türkiye, and the courts and consumer arbitration committees of Türkiye have jurisdiction. If you use the app as a consumer resident elsewhere, you keep the protection of any mandatory law of your country of residence, and you may also bring proceedings there.</p>
-      <p>If any provision of these terms is found unenforceable, the rest remains in force.</p>
+    <section id="changes">
+      <h2><span class="num">10</span> Changes to This Policy</h2>
+      <p>This privacy policy may be updated from time to time, for example when a new feature changes how data is handled. Any changes will be posted on this page and the "last updated" date at the top will be revised accordingly.</p>
     </section>
 
     <section id="contact">
-      <h2><span class="num">12</span> Contact</h2>
-      <p>Questions about these terms, a purchase or the app in general:</p>
+      <h2><span class="num">11</span> Contact</h2>
+      <p>If you have questions about this privacy policy, you can reach us at:</p>
       <div class="contact-card">
         <div>
           <span class="to">Email</span>
@@ -443,7 +460,7 @@
     </section>
 
     <footer>
-      <span>Bunko eReader · <a href="./bunko-privacy-policy.html">Privacy Policy</a></span>
+      <span>Bunko eReader</span>
       <span>Last updated: September 2, 2026</span>
     </footer>
   </div>
