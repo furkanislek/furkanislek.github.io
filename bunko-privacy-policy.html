@@ -320,15 +320,15 @@
 
     <div class="colophon">
       <span class="mark">Bunko eReader</span>
-      <span>Version 1.1 · Last updated September 2, 2026</span>
+      <span>Version 1.2 · Last updated October 17, 2026</span>
     </div>
 
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Short version: your books and reading data stay on your device. Only two optional features ever touch the internet.</p>
+    <p class="subtitle">Your book files and notes stay on your device. Usage measurement, ads, purchases and translation use third-party services.</p>
 
     <div class="summary">
-      <p><strong>Bunko eReader</strong> is a reading app for EPUB, PDF, Word, Excel and text files that runs on your device. It requires no account and includes no advertising, analytics or crash-reporting service. Your books, reading progress, notes and statistics are stored only on your own phone and are never sent to us.</p>
-      <p>Two features use the internet, and only when you choose to use them: <strong>Bunko Pro purchases</strong> (handled by the app store and RevenueCat) and <strong>tap-to-translate</strong> (which sends the text you select to Google Translate). Everything else works fully offline.</p>
+      <p><strong>Bunko eReader</strong> opens EPUB, PDF, Word, Excel and text files without an account. Book files, titles, notes, highlights and saved reading positions remain on your device unless you export content or request a translation.</p>
+      <p>The Android and iOS apps use <strong>Google Analytics for Firebase</strong> to measure feature usage, including reading duration and page transitions. The free version uses <strong>Google AdMob</strong> for ads. Purchases use the app store and RevenueCat; translation sends your selected text to Google Translate. These services process the data described below.</p>
     </div>
 
     <nav class="toc" aria-label="Table of contents">
@@ -350,17 +350,23 @@
 
     <section id="collection">
       <h2><span class="num">01</span> Data We Collect</h2>
-      <p>Bunko eReader has no user accounts and no server of its own. We do not collect, store or transmit any of the following:</p>
+      <p>Bunko has no account registration or book-upload server. We do not send your book files, titles, authors, file paths, notes, highlights or search text to Analytics or AdMob.</p>
       <div class="pill-row">
-        <span class="pill no">Name, email, phone</span>
-        <span class="pill no">Location data</span>
-        <span class="pill no">Usage analytics</span>
-        <span class="pill no">Advertising ID</span>
-        <span class="pill no">Crash reporting</span>
         <span class="pill no">Account / sign-in</span>
-        <span class="pill no">Your library or reading history</span>
+        <span class="pill no">Book uploads</span>
+        <span class="pill no">Notes uploads</span>
+        <span class="pill">Usage analytics</span>
+        <span class="pill">Ads in free version</span>
       </div>
-      <p>The app contains no advertising, analytics or crash-tracking SDK. The only third-party components that communicate over the internet are the purchase SDK described in section 04 and the translation service described in section 05, and both are limited to the single task they perform.</p>
+      <h3>Usage measurement</h3>
+      <p>Google Analytics for Firebase measures onboarding completion, screens viewed, document import and open attempts, document format, reading duration and page transitions, reader-setting changes, read-aloud starts and views of the Pro screen. These events help us understand which features are used and improve the app. They do not identify which book you are reading.</p>
+      <p>Analytics also collects installation identifiers, app and device information, session data and approximate location. Depending on platform permissions and device settings, device or advertising identifiers may be available. Bunko does not request GPS location. We do not assign a name, email address or account ID to Analytics events.</p>
+      <p>Analytics starts when the Android or iOS app starts, including for Pro users. The current app does not provide a separate Analytics opt-out switch. Advertising consent messages apply to ads; they are not an Analytics off switch.</p>
+      <p>More information: <a href="https://support.google.com/analytics/answer/11593727" rel="noopener">Google Analytics data collection</a> and <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+      <h3>Advertising</h3>
+      <p>The free version uses Google AdMob to load and show interstitial ads. Pro users are exempt from these ads. Google may process IP-derived approximate location, device identifiers, ad impressions and interactions, and diagnostic or performance information. Identifier availability and ad personalization depend on permissions, consent and device settings.</p>
+      <p>The app requests advertising consent information through Google's User Messaging Platform and shows a consent form when required by that service. See <a href="https://developers.google.com/admob/ios/privacy/data-disclosure" rel="noopener">Google Mobile Ads data disclosures</a> and <a href="https://policies.google.com/technologies/ads" rel="noopener">How Google uses information for advertising</a>.</p>
+      <p>Bunko does not use Firebase Crashlytics or Firestore. This does not prevent the advertising SDK from processing its own diagnostic data.</p>
     </section>
 
     <section id="local">
@@ -375,7 +381,7 @@
         <li>A pagination cache so pages open faster</li>
         <li>Whether Bunko Pro is active on this device (a cached status, see section 04)</li>
       </ul>
-      <p>None of this data is sent to us. It leaves your device only if you export or share it yourself (see section 06), or if your operating system's own backup feature (such as Google Drive or iCloud device backup) includes app data. Those system backups are governed by Google's or Apple's privacy policy, not by ours.</p>
+      <p>Your book files, notes and detailed saved reading positions are not uploaded by Bunko. Separate usage events, such as reading duration and page transitions, are sent to Analytics as described in section 01. Data may also leave your device when you export or share it (section 06), request a translation (section 05), or use an operating-system backup such as iCloud or Google Drive. System backups follow the platform provider's privacy policy.</p>
     </section>
 
     <section id="permission">
@@ -387,14 +393,14 @@
     <section id="pro">
       <h2><span class="num">04</span> Bunko Pro and Purchases</h2>
       <p>Bunko Pro is an optional in-app purchase. Payment is processed entirely by <strong>Google Play</strong> or the <strong>Apple App Store</strong>. Bunko never sees your name, payment method or card details.</p>
-      <p>To check whether a purchase is valid and to restore it on a new device, the app uses <a href="https://www.revenuecat.com/" rel="noopener">RevenueCat</a>, a subscription management service. When you open the paywall, purchase or restore, the following is sent to RevenueCat:</p>
+      <p>To check whether a purchase is valid and to restore it on a new device, the app uses <a href="https://www.revenuecat.com/" rel="noopener">RevenueCat</a>, a subscription management service. The purchase SDK is initialized at app startup to check Pro status. During initialization and when checking, purchasing or restoring Pro, RevenueCat may process:</p>
       <ul>
         <li>A randomly generated, anonymous app user ID that is not linked to your name or email</li>
         <li>The purchase receipt issued by Google Play or the App Store</li>
         <li>Basic device information such as platform, operating system version and app version</li>
       </ul>
-      <p>RevenueCat uses this only to validate and manage your purchase. It is not used for advertising, and we do not combine it with any other data. RevenueCat's handling of this data is described in the <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat Privacy Policy</a>.</p>
-      <div class="note">If you never open the paywall or purchase Pro, no purchase data is created and nothing is sent to RevenueCat.</div>
+      <p>Bunko uses RevenueCat to validate and manage Pro access. Bunko does not attach your book content or notes to purchase records. RevenueCat's handling of this data is described in the <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat Privacy Policy</a>.</p>
+      <div class="note">RevenueCat may receive an app-generated identifier and device information even if you do not purchase Pro, because Pro status is checked at startup.</div>
     </section>
 
     <section id="translate">
@@ -403,7 +409,7 @@
       <ul>
         <li>The request contains the selected text and your target language. It does not include your name, an account, the book title or any identifier from the app.</li>
         <li>Google may process the text under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
-        <li>Nothing is sent unless you explicitly use the lookup. Reading, highlighting and note-taking never trigger a request.</li>
+        <li>Nothing is sent unless you explicitly use the lookup. Reading, highlighting and note-taking do not trigger a translation request. Analytics events described in section 01 are separate.</li>
         <li>If the translation service cannot be reached, the app may offer to open Google Translate in your browser. That page is then subject to Google's policy.</li>
       </ul>
       <p>Bunko does not store the translated text on any server. Results are shown on screen and kept only on your device.</p>
@@ -421,25 +427,28 @@
 
     <section id="thirdparty">
       <h2><span class="num">07</span> Internet and Third Parties</h2>
-      <p>Apart from the two cases above, Bunko eReader works entirely offline. It contains no advertising network, no analytics library and no crash-reporting service. We do not sell your data, and we do not share it with any third party for their own purposes.</p>
-      <p>The third parties that may process data when you use the corresponding feature are:</p>
+      <p>Book viewing works locally. Internet connections are used for usage measurement, ads, purchase management and translation. Bunko does not sell your book files or notes.</p>
       <ul>
-        <li><strong>Google Play / Apple App Store</strong>: payment and receipts for Bunko Pro</li>
-        <li><strong>RevenueCat</strong>: purchase validation and restore (section 04)</li>
-        <li><strong>Google Translate</strong>: translation of text you select (section 05)</li>
+        <li><strong>Google Analytics for Firebase</strong>: usage measurement and reporting (section 01)</li>
+        <li><strong>Google AdMob and User Messaging Platform</strong>: ads and advertising consent (section 01)</li>
+        <li><strong>Google Play / Apple App Store</strong>: payments and receipts</li>
+        <li><strong>RevenueCat</strong>: Pro access checks, purchase validation and restore (section 04)</li>
+        <li><strong>Google Translate</strong>: selected text and translation language (section 05)</li>
       </ul>
-      <p>This policy and our <a href="./bunko-terms.html">Terms of Use</a> are linked inside the app under <strong>Settings → About</strong>, and on the Bunko Pro screen.</p>
+      <p>Providers may process data on servers outside your country under their terms and privacy policies. Analytics event retention depends on the Firebase/Google Analytics project's configured retention settings; advertising and purchase records follow the applicable provider's retention practices. This policy does not promise a fixed deletion period for third-party records.</p>
+      <p>This policy and our <a href="./bunko-terms.html">Terms of Use</a> are linked under <strong>Settings → About</strong> and on the Pro screen.</p>
     </section>
 
     <section id="children">
       <h2><span class="num">08</span> Children's Privacy</h2>
-      <p>Bunko eReader is not directed at children under 13 and does not knowingly collect personal data from anyone, including children. The app contains an optional in-app purchase; purchases are controlled by the parental controls and payment settings of Google Play or the App Store on the device.</p>
+      <p>Bunko eReader is not directed at children under 13. If you believe a child has provided personal data through the app or its services, contact us using section 11. Purchases are subject to the device's app-store payment settings and parental controls.</p>
     </section>
 
     <section id="deletion">
       <h2><span class="num">09</span> Deleting Your Data</h2>
-      <p>All reading data is kept only on your device, so it remains under your control. You can permanently delete it by clearing the app's storage or by uninstalling the app.</p>
-      <p>The anonymous purchase record held by RevenueCat contains no personal information. If you would still like it deleted, email us with the request from the device in question and we will ask RevenueCat to remove it.</p>
+      <p>You can remove local book files and reading records by clearing the app's storage or uninstalling it. Backups and exported files must be deleted separately from wherever you saved them.</p>
+      <p>Uninstalling the app does not itself delete data previously processed by Analytics, AdMob, RevenueCat or an app store. Device advertising privacy settings may restrict identifier use but do not remove previously collected records.</p>
+      <p>For questions about access or deletion of data processed through Bunko, email us using section 11. We will assess the request and coordinate with the relevant provider where records can be identified. Bunko has no account system, so locating a particular installation's records may require additional information. Do not send book contents or payment card details.</p>
     </section>
 
     <section id="changes">
@@ -461,7 +470,7 @@
 
     <footer>
       <span>Bunko eReader</span>
-      <span>Last updated: September 2, 2026</span>
+      <span>Last updated: October 17, 2026</span>
     </footer>
   </div>
 </div>
